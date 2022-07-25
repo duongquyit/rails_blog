@@ -1,0 +1,24 @@
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="password"] {
+  margin-top: -1px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+
+.mt-10 {
+  margin-top: 10em !important;
+}

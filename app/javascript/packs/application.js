@@ -7,6 +7,9 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+window.bootstrap = require("bootstrap");
+import "../../assets/stylesheets/application.scss";
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
