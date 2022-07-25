@@ -2,12 +2,12 @@
     <h1 class="h3 mb-3 fw-normal w-100 text-center">Please signin</h1>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: ''}) do |f| %>
       <div class="form-floating">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control rounded-top', placeholder: "name@example.com", type: 'email' %>
-        <%= f.label :email, for: 'floatingInput', class: 'text-center' %>
+        <%= f.text_field :signin, autofocus: true, class: 'form-control rounded-top', placeholder: "name@example.com"%>
+        <%= f.label "Username or Email", for: 'floatingInput', class: 'text-center' %>
       </div>
 
       <div class="form-floating">
-        <%= f.password_field :password, autocomplete: "current-password", class: 'form-control rounded-bottom mb-3', placeholder: "Password", type: 'password' %>
+        <%= f.password_field :password, autocomplete: "current-password", class: 'form-control rounded-bottom mb-3', placeholder: "Password" %>
         <%= f.label :password, for: 'floatingInput', class: 'text-center' %>
       </div>
 

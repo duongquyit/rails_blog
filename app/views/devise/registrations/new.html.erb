@@ -9,16 +9,20 @@
     </div>
 
     <div class="form-floating">
+      <%= f.text_field :username, autocomplete: "new-password", class: 'form-control mt--1', placeholder: "Username" %>
+      <%= f.label :username, for: 'floatingInput' %>
+    </div>
+
+    <div class="form-floating">
       <%= f.password_field :password, autocomplete: "new-password", class: 'form-control', placeholder: "Password" %>
       <%= f.label :password, for: 'floatingInput' %>
-
     </div>
 
     <div class="form-floating">
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control mb-3 rounded-bottom', placeholder: "PasswordConfirm" %>
       <%= f.label :password_confirmation, for: 'floatingInput' %>
     </div>
-    
+
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="actions">
