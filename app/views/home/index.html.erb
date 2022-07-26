@@ -1,6 +1,6 @@
 <h1>Hello Rails</h1>
 <% if user_signed_in? %>
-  <p><%= current_user %></p>
+  <p><%= current_user.username %></p>
   <button><%= 
     link_to 'Logout', signout_path,
     method: :delete, 
