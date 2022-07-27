@@ -1,0 +1,9 @@
+<h1>User dashboard page</h1>
+<% if user_signed_in? %>
+  <p><%= current_user.username %></p>
+  <button><%= 
+    link_to 'Logout', signout_path,
+    method: :delete, 
+    data: { confirm: 'Do you want to log out?' } 
+  %></button>
+<% end %>

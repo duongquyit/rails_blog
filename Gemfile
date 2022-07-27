@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'letter_opener_web'
 gem "omniauth-google-oauth2"
 gem "omniauth-rails_csrf_protection"
+gem "pundit", "~> 2.2"
