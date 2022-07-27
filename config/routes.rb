@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'registrations/update'
   root to: "home#index"
-  devise_for :users, :controllers => {:registrations => "registrations"}
+  devise_for :users, :controllers => {:registrations => "registrations", omniauth_callbacks: 'users/omniauth_callbacks' }
   as :user do
     get "signin" => "devise/sessions#new"
     post "signin" => "devise/sessions#create"
