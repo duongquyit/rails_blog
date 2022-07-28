@@ -3,5 +3,7 @@ class AdminsController < ApplicationController
 
   def index
     @users = User.all
+    @time = Time.now
+    binding.pry
   end
 end
